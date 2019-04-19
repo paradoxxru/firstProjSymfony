@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+	<div id='wrapper'>
+		<div id="sidebar">
+            {% block sidebar %}
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                </ul>
+            {% endblock %}
+        </div>
+		<div>
+			<h1>Моя первая страница в symfony</h1>
+		</div>
+	</div>
+{% endblock %}
